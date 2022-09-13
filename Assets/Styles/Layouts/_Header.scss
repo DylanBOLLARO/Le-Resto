@@ -1,0 +1,74 @@
+#resto {
+  padding-right: 70px;
+  font-family: $font1;
+  font-size: 5rem;
+  font-weight: bold;
+
+  &:hover {
+    color: white;
+  }
+}
+
+header {
+  height: 100vh;
+  background: url(../../Imgs/bg-slider-06.png) center/cover;
+  nav {
+    padding: 0 10%;
+    ul {
+      @include space;
+      height: 160px;
+      font-family: $font3;
+      list-style-type: none;
+
+      li {
+        color: white;
+        font-size: 1rem;
+
+        &:hover {
+          color: rgb(255, 208, 178);
+        }
+
+        div {
+          img {
+            padding: 0 15px;
+            height: 32px;
+            width: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mid {
+  @include column;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  h2 {
+    height: 50px;
+    font-family: $font1;
+    font-size: 5rem;
+    font-weight: 500;
+    color: rgb(185, 129, 94);
+  }
+
+  h1 {
+    font-family: $font2;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 6px;
+  }
+  img {
+    padding: 50px 0 50px 0;
+  }
+  h3 {
+    font-family: $font3;
+    font-weight: 100;
+    letter-spacing: 6px;
+    text-shadow: 5px 5px 3px rgb(255, 208, 178), 0 0 1em black;
+  }
+}

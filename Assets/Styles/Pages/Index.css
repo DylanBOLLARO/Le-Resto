@@ -1,0 +1,963 @@
+@font-face {
+  font-family: Allura_Regular;
+  src: url(../../Fonts/Allura_Regular.ttf);
+}
+@font-face {
+  font-family: Poppins_Medium;
+  src: url(../../Fonts/Poppins_Medium.ttf);
+}
+@font-face {
+  font-family: Roboto_Light;
+  src: url(../../Fonts/Roboto_Light.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#resto {
+  padding-right: 70px;
+  font-family: "Allura_Regular";
+  font-size: 5rem;
+  font-weight: bold;
+}
+#resto:hover {
+  color: white;
+}
+
+header {
+  height: 100vh;
+  background: url(../../Imgs/bg-slider-06.png) center/cover;
+}
+header nav {
+  padding: 0 10%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 160px;
+  font-family: "Roboto_Light";
+  list-style-type: none;
+}
+header nav ul li {
+  color: white;
+  font-size: 1rem;
+}
+header nav ul li:hover {
+  color: rgb(255, 208, 178);
+}
+header nav ul li div img {
+  padding: 0 15px;
+  height: 32px;
+  width: 32px;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+.mid h2 {
+  height: 50px;
+  font-family: "Allura_Regular";
+  font-size: 5rem;
+  font-weight: 500;
+  color: rgb(185, 129, 94);
+}
+.mid h1 {
+  font-family: "Poppins_Medium";
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 6px;
+}
+.mid img {
+  padding: 50px 0 50px 0;
+}
+.mid h3 {
+  font-family: "Roboto_Light";
+  font-weight: 100;
+  letter-spacing: 6px;
+  text-shadow: 5px 5px 3px rgb(255, 208, 178), 0 0 1em black;
+}
+
+.Section1 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Section1 .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 100%;
+  background: whitesmoke;
+}
+.Section1 .left .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dotted orange;
+  width: 95%;
+  height: 90%;
+}
+.Section1 .left .box .container {
+  padding: 0px 20px;
+  height: 100%;
+}
+.Section1 .left .box .container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  row-gap: 40px;
+}
+.Section1 .left .box .container ul li h2 {
+  font-family: "Allura_Regular";
+  height: 33px;
+  font-size: 2rem;
+  color: rgb(185, 129, 94);
+  font-weight: 400;
+}
+.Section1 .left .box .container ul li h1 {
+  font-family: "Poppins_Medium";
+  font-size: 1rem;
+}
+.Section1 .left .box .container ul li .imageLogo {
+  background: url(../../Imgs/ic-plate.png);
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.Section1 .left .box .container ul li p {
+  font-family: "Roboto_Light";
+  color: rgb(73, 73, 73);
+  font-weight: lighter;
+  line-height: 20px;
+}
+.Section1 .left .box .container ul li .imageChef {
+  background: url(../../Imgs/avatar-01.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 64px;
+  border-radius: 33%;
+}
+.Section1 .left .box .container ul li h3 {
+  font-family: "Poppins_Medium";
+  color: rgb(73, 73, 73);
+  font-weight: lighter;
+  line-height: 20px;
+}
+.Section1 .left .box .container ul li h4 {
+  font-family: "Poppins_Medium";
+  color: rgb(171, 171, 171);
+  line-height: 20px;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.Section1 .right {
+  background: url(../../Imgs/store-01.jpg) center/cover;
+  width: 50vw;
+  height: 100%;
+}
+
+#image1 {
+  background: url(../../Imgs/dish-item-01.jpg) no-repeat center/contain;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+#image2 {
+  background: url(../../Imgs/dish-item-02.jpg) no-repeat center/contain;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+#image3 {
+  background: url(../../Imgs/dish-item-03.jpg) no-repeat center/contain;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+#image4 {
+  background: url(../../Imgs/dish-item-04.jpg) no-repeat center/contain;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+#image5 {
+  background: url(../../Imgs/dish-item-05.jpg) no-repeat center/contain;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+#image6 {
+  background: url(../../Imgs/dish-item-06.jpg) no-repeat center/contain;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+#image7 {
+  background: url(../../Imgs/dish-item-07.jpg) no-repeat center/contain;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+#image8 {
+  background: url(../../Imgs/dish-item-08.jpg) no-repeat center/contain;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+.Section2 {
+  background-color: #21201e;
+  position: relative;
+  overflow: hidden;
+}
+.Section2 .BG {
+  background: url(../../Imgs/bg-menu-01.jpg) bottom/contain;
+  background-repeat: no-repeat;
+  height: 130vh;
+  width: 100vw;
+}
+.Section2 .container {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  background-color: #21201e;
+  height: 80%;
+  width: 60%;
+  margin: 100px 0;
+}
+.Section2 .container .top {
+  height: 20%;
+  width: 100%;
+  background-color: #21201e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Section2 .container .top ul {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  list-style-type: none;
+}
+.Section2 .container .top ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin: 20px 0;
+}
+.Section2 .container .top ul li h2 {
+  font-family: "Allura_Regular";
+  height: 33px;
+  font-size: 3rem;
+  color: rgb(185, 129, 94);
+  font-weight: 400;
+  text-align: center;
+}
+.Section2 .container .top ul li .imageLogo {
+  background: url(../../Imgs/ic-plate.png);
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.Section2 .container .top ul li ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.Section2 .container .top ul li ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  font-family: "Roboto_Light";
+  font-size: 1.2rem;
+}
+.Section2 .container .top ul li ul li .souligner {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding-bottom: 15px;
+}
+.Section2 .container .top ul li ul li:hover {
+  color: rgb(255, 208, 178);
+}
+.Section2 .container .orangeBAR {
+  width: 100%;
+  height: 5px;
+  background-color: rgb(205, 132, 47);
+}
+.Section2 .container .bottom {
+  height: 80%;
+  width: 100%;
+  bottom: 0;
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+.Section2 .container .bottom .box {
+  max-height: 180px;
+  display: grid;
+  grid-template-columns: 30% 60% 10%;
+  align-items: center;
+  margin: 0 20px;
+  padding: 0 10px;
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.246);
+}
+.Section2 .container .bottom .box .text {
+  padding: 0 20px;
+}
+.Section2 .container .bottom .box .text h2 {
+  font-size: 1.2rem;
+  font-family: "Roboto_Light";
+  padding-bottom: 10px;
+}
+.Section2 .container .bottom .box .text p {
+  font-size: 1.5rem;
+  font-family: "Roboto_Light";
+}
+.Section2 .container .bottom .box .prix {
+  color: #af8448;
+  font-size: 1rem;
+  font-family: "Roboto_Light";
+  text-align: center;
+}
+
+#numberPhone h1 {
+  color: #8f6c3a;
+  font-family: "Poppins_Medium";
+  font-size: 2rem;
+  padding-bottom: 30px;
+  padding: 20px 0;
+}
+
+.Section3 {
+  height: 90vh;
+  background: #21201e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.Section3 .container {
+  background: whitesmoke;
+  height: 777px;
+  width: 1344px;
+  display: grid;
+  grid-template-columns: 33% 67%;
+}
+.Section3 .container .noir {
+  background: black;
+  padding: 30px;
+}
+.Section3 .container .noir .inside {
+  border: 1px dashed rgba(255, 255, 255, 0.653);
+  height: 100%;
+}
+.Section3 .container .noir .inside .liste ul {
+  list-style-type: none;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Section3 .container .noir .inside .liste ul li {
+  margin: 20px 0;
+}
+.Section3 .container .noir .inside .liste ul li h1 {
+  font-family: "Allura_Regular";
+  font-size: 3rem;
+  font-weight: lighter;
+  color: #8f6c3a;
+  height: 40px;
+}
+.Section3 .container .noir .inside .liste ul li h2 {
+  font-family: "Poppins_Medium";
+  font-size: 2rem;
+  height: 50px;
+}
+.Section3 .container .noir .inside .liste ul li .imageLogo {
+  background: url(../../Imgs/ic-plate.png);
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.Section3 .container .noir .inside .liste ul li .boxSec3 h1 {
+  color: #8f6c3a;
+  font-family: "Poppins_Medium";
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+.Section3 .container .noir .inside .liste ul li .boxSec3 h2 {
+  color: white;
+  font-family: "Roboto_Light";
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+.Section3 .container .blanc {
+  background: whitesmoke;
+}
+.Section3 .container .blanc .inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Section3 .container .blanc .inside h1 {
+  color: #8f6c3a;
+  font-family: "Allura_Regular";
+  font-size: 4rem;
+  font-weight: lighter;
+  height: 50px;
+  padding-top: 100px;
+}
+.Section3 .container .blanc .inside h2 {
+  font-family: "Poppins_Medium";
+  font-size: 2.8rem;
+  padding-bottom: 30px;
+}
+.Section3 .container .blanc .inside .imageLogo {
+  background: url(../../Imgs/ic-plate.png);
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 50px 0;
+}
+.Section3 .container .blanc .inside .boxReservation {
+  height: 200px;
+  width: 85%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.Section3 .container .blanc .inside .boxReservation .menu {
+  position: relative;
+  background: none;
+  border: none;
+  margin: 0 20px;
+  height: 50px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.Section3 .container .blanc .inside .boxReservation .menu .btn {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.Section3 .container .blanc .inside .boxReservation .menu .btn h1 {
+  color: white;
+  font-family: Arial;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.Section3 .container .blanc .inside .boxReservation input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid grey;
+  margin: 0 20px;
+  height: 50px;
+}
+.Section3 .container .blanc .inside button {
+  background: #21201e;
+  height: 60px;
+  width: 250px;
+  border-radius: 150px;
+  color: white;
+  font-family: "Poppins_Medium";
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  margin: 50px 0;
+}
+
+.Section4 {
+  height: 90vh;
+  background: #21201e;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+}
+.Section4 h1 {
+  color: #8f6c3a;
+  font-family: "Allura_Regular";
+  font-size: 3rem;
+  font-weight: lighter;
+  height: 50px;
+  padding-top: 100px;
+}
+.Section4 h2 {
+  font-family: "Poppins_Medium";
+  font-size: 2.8rem;
+  padding-bottom: 30px;
+  font-weight: bold;
+  color: white;
+}
+.Section4 .imageLogo {
+  background: url(../../Imgs/ic-plate.png);
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.Section4 .boxSec4 {
+  margin: 50px 0;
+  width: 80%;
+  height: 700px;
+  background: #21201e;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "gauche1 droite" "gauche2 droite";
+}
+.Section4 .boxSec4 .gauche .container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.Section4 .boxSec4 .gauche .container .top {
+  grid-area: gauche1;
+  background: white;
+  height: calc(100% - 30px);
+  width: calc(100% - 30px);
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.Section4 .boxSec4 .gauche .container .bottom {
+  grid-area: gauche2;
+  background: white;
+  height: calc(100% - 30px);
+  width: calc(100% - 30px);
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.Section4 .boxSec4 .gauche .container .partA {
+  background: url(../../Imgs/event-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Section4 .boxSec4 .gauche .container .partA .blackBox {
+  background: #21201e;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Section4 .boxSec4 .gauche .container .partA .blackBox h1 {
+  color: white;
+  font-size: 3rem;
+  height: 60px;
+  font-family: "Poppins_Medium";
+  margin: 0;
+  padding: 0;
+}
+.Section4 .boxSec4 .gauche .container .partA .blackBox h2 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-family: "Roboto_Light";
+  font-weight: 500;
+}
+.Section4 .boxSec4 .gauche .container .partB {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding: 25px;
+}
+.Section4 .boxSec4 .gauche .container .partB h1 {
+  color: black;
+  font-size: 1.8rem;
+  height: 60px;
+  font-family: "Roboto_Light";
+  margin: 0;
+  padding: 0;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+.Section4 .boxSec4 .gauche .container .partB h2 {
+  color: rgb(195, 195, 195);
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  font-family: "Roboto_Light";
+  font-weight: 500;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+.Section4 .boxSec4 .gauche .container .partB h3 {
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: "Roboto_Light";
+  font-weight: 700;
+  margin: 10px 0;
+  letter-spacing: 4px;
+}
+.Section4 .boxSec4 .gauche .container .partC {
+  background: url(../../Imgs/event-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Section4 .boxSec4 .gauche .container .partC .blackBox {
+  background: #21201e;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.Section4 .boxSec4 .gauche .container .partC .blackBox h1 {
+  color: white;
+  font-size: 3rem;
+  height: 60px;
+  font-family: "Poppins_Medium";
+  margin: 0;
+  padding: 0;
+}
+.Section4 .boxSec4 .gauche .container .partC .blackBox h2 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-family: "Roboto_Light";
+  font-weight: 500;
+}
+.Section4 .boxSec4 .gauche .container .partD {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding: 25px;
+}
+.Section4 .boxSec4 .gauche .container .partD h1 {
+  color: black;
+  font-size: 1.8rem;
+  height: 60px;
+  font-family: "Roboto_Light";
+  margin: 0;
+  padding: 0;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+.Section4 .boxSec4 .gauche .container .partD h2 {
+  color: rgb(195, 195, 195);
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  font-family: "Roboto_Light";
+  font-weight: 500;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+.Section4 .boxSec4 .gauche .container .partD h3 {
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: "Roboto_Light";
+  font-weight: 700;
+  margin: 10px 0;
+  letter-spacing: 4px;
+}
+.Section4 .droite {
+  grid-area: droite;
+}
+.Section4 .droite .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.Section4 .droite .container .boxPartDroite {
+  background: no-repeat url(../../Imgs/event-03.jpg);
+  background-position: center;
+  background-size: cover;
+  height: calc(100% - 30px);
+  width: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Section4 .droite .container .boxPartDroite .boxText {
+  background: white;
+  height: calc(100% - 80px);
+  width: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.Section4 .droite .container .boxPartDroite .boxText h1 {
+  color: black;
+  font-size: 1.8rem;
+  height: 60px;
+  font-family: "Roboto_Light";
+  margin: 0;
+  padding: 0;
+  margin: 10px 0;
+  letter-spacing: 1px;
+  padding: 0 50px;
+  text-align: center;
+}
+.Section4 .droite .container .boxPartDroite .boxText h2 {
+  color: rgb(195, 195, 195);
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  font-family: "Roboto_Light";
+  font-weight: 500;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+.Section4 .droite .container .boxPartDroite .boxText h3 {
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: "Roboto_Light";
+  font-weight: 700;
+  margin: 10px 0;
+  letter-spacing: 4px;
+  padding-bottom: 50px;
+}
+.Section4 .droite .container .boxPartDroite .boxText .blackBox {
+  background: #21201e;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.Section4 .droite .container .boxPartDroite .boxText .blackBox h1 {
+  color: white;
+  font-size: 3rem;
+  height: 60px;
+  font-family: "Poppins_Medium";
+  margin: 0;
+  padding: 0;
+}
+.Section4 .droite .container .boxPartDroite .boxText .blackBox h2 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-family: "Roboto_Light";
+  font-weight: 500;
+}
+
+.Section5 {
+  height: 100vh;
+  background: #21201e;
+  display: grid;
+  grid-template-rows: 33% 33% 34%;
+}
+.Section5 .bg {
+  position: relative;
+}
+.Section5 .bg .whiteBox {
+  position: absolute;
+  height: 400px;
+  width: 60%;
+  background: white;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Section5 .bg .whiteBox .image {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  background: no-repeat url(../../Imgs/avatar-02.jpg) center/cover;
+  z-index: 6;
+  top: 0;
+  transform: translateY(-50%);
+  border-radius: 150px;
+}
+.Section5 .bg .whiteBox p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Roboto_Light";
+  padding-bottom: 30px;
+}
+.Section5 .bg .whiteBox p span {
+  font-size: 2rem;
+  font-family: "Poppins_Medium";
+}
+.Section5 .bg .whiteBox h1 {
+  font-size: 2rem;
+  font-family: "Roboto_Light";
+  font-weight: 100;
+  padding-bottom: 30px;
+}
+.Section5 .bg .whiteBox h2 {
+  font-size: 1.5rem;
+  font-family: "Roboto_Light";
+  color: rgb(145, 109, 43);
+  font-weight: lighter;
+}
+.Section5 .map {
+  background: url(../../Imgs/gmap.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.Section5 .map .box {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+}
+.Section5 .footer {
+  background: url(../../Imgs/bg-footer.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.Section5 .footer .gauche {
+  padding: 50px 50px 50px 350px;
+}
+.Section5 .footer .gauche h1 {
+  color: rgb(163, 126, 58);
+  padding: 20px 0;
+  font-family: "Allura_Regular";
+  font-weight: lighter;
+  font-size: 3rem;
+}
+.Section5 .footer .gauche h2 {
+  color: rgb(215, 215, 215);
+  padding: 20px 0;
+  font-family: "Roboto_Light";
+  font-size: 1.2rem;
+  font-weight: lighter;
+  line-height: 2;
+}
+.Section5 .footer .droite {
+  padding: 50px;
+}
+.Section5 .footer .droite .up {
+  height: 50%;
+}
+.Section5 .footer .droite .up h1 {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Poppins_Medium";
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.Section5 .footer .droite .up input {
+  background: transparent;
+  height: 40px;
+  width: 240px;
+  border: 1px solid rgba(255, 166, 0, 0.255);
+}
+.Section5 .footer .droite .up input::-moz-placeholder {
+  padding-left: 5%;
+}
+.Section5 .footer .droite .up input:-ms-input-placeholder {
+  padding-left: 5%;
+}
+.Section5 .footer .droite .up input::placeholder {
+  padding-left: 5%;
+}
+.Section5 .footer .droite .down {
+  height: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.Section5 .footer .droite .down h1 {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Poppins_Medium";
+  font-weight: 500;
+}
+.Section5 .footer .droite .down img {
+  height: 20px;
+  margin: 0 20px;
+}/*# sourceMappingURL=Index.css.map */

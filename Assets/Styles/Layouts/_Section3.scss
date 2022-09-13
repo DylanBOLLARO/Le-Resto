@@ -1,0 +1,170 @@
+#numberPhone {
+  h1 {
+    color: #8f6c3a;
+    font-family: $font2;
+    font-size: 2rem;
+    padding-bottom: 30px;
+    padding: 20px 0;
+  }
+}
+
+.Section3 {
+  height: 90vh;
+  background: #21201e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .container {
+    background: whitesmoke;
+    height: 777px;
+    width: 1344px;
+
+    display: grid;
+    grid-template-columns: 33% 67%;
+
+    .noir {
+      background: black;
+      padding: 30px;
+
+      .inside {
+        border: 1px dashed rgba(255, 255, 255, 0.653);
+        height: 100%;
+
+        .liste {
+          ul {
+            list-style-type: none;
+            color: whitesmoke;
+            @include column;
+            text-align: center;
+
+            li {
+              margin: 20px 0;
+
+              h1 {
+                font-family: $font1;
+                font-size: 3rem;
+                font-weight: lighter;
+                color: #8f6c3a;
+                height: 40px;
+              }
+
+              h2 {
+                font-family: $font2;
+                font-size: 2rem;
+                height: 50px;
+              }
+
+              .imageLogo {
+                background: url(../../Imgs/ic-plate.png);
+                width: 32px;
+                height: 32px;
+                background-size: contain;
+                background-repeat: no-repeat;
+              }
+
+              .boxSec3 {
+                h1 {
+                  color: #8f6c3a;
+                  font-family: $font2;
+                  font-size: 2rem;
+                  padding-bottom: 30px;
+                }
+
+                h2 {
+                  color: white;
+                  font-family: $font3;
+                  font-size: 1.5rem;
+                  font-weight: lighter;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .blanc {
+      background: whitesmoke;
+
+      .inside {
+        @include column;
+
+        h1 {
+          color: #8f6c3a;
+          font-family: $font1;
+          font-size: 4rem;
+          font-weight: lighter;
+          height: 50px;
+          padding-top: 100px;
+        }
+
+        h2 {
+          font-family: $font2;
+          font-size: 2.8rem;
+          padding-bottom: 30px;
+        }
+
+        .imageLogo {
+          background: url(../../Imgs/ic-plate.png);
+          width: 32px;
+          height: 32px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          margin: 50px 0;
+        }
+        .boxReservation {
+          height: 200px;
+          width: 85%;
+          display: grid;
+          grid-template-columns: 33% 33% 33%;
+
+          .menu {
+            position: relative;
+            background: none;
+            border: none;
+            margin: 0 20px;
+            height: 50px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            .btn {
+              position: absolute;
+              margin: 0;
+              padding: 0;
+              width: 100%;
+
+              h1 {
+                color: white;
+                font-family: Arial;
+                font-size: 1rem;
+                margin: 0;
+                padding: 0;
+              }
+            }
+          }
+
+          input {
+            background: none;
+            border: none;
+            border-bottom: 1px solid grey;
+            margin: 0 20px;
+            height: 50px;
+          }
+        }
+
+        button {
+          background: #21201e;
+          height: 60px;
+          width: 250px;
+          border-radius: 150px;
+          color: white;
+          font-family: $font2;
+          font-size: 1.3rem;
+          letter-spacing: 3px;
+          margin: 50px 0;
+        }
+      }
+    }
+  }
+}

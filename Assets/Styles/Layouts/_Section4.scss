@@ -1,0 +1,311 @@
+.Section4 {
+  height: 90vh;
+  background: #21201e;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+
+  h1 {
+    color: #8f6c3a;
+    font-family: $font1;
+    font-size: 3rem;
+    font-weight: lighter;
+    height: 50px;
+    padding-top: 100px;
+  }
+
+  h2 {
+    font-family: $font2;
+    font-size: 2.8rem;
+    padding-bottom: 30px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .imageLogo {
+    background: url(../../Imgs/ic-plate.png);
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .boxSec4 {
+    margin: 50px 0;
+    width: 80%;
+    height: 700px;
+    background: #21201e;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "gauche1 droite"
+      "gauche2 droite";
+
+    .gauche {
+      .container {
+        height: 100%;
+        width: 100%;
+        @include column;
+        overflow: hidden;
+
+        .top {
+          grid-area: gauche1;
+          background: white;
+          height: calc(100% - 30px);
+          width: calc(100% - 30px);
+          display: grid;
+          grid-template-columns: 40% 60%;
+        }
+
+        .bottom {
+          grid-area: gauche2;
+          background: white;
+          height: calc(100% - 30px);
+          width: calc(100% - 30px);
+          display: grid;
+          grid-template-columns: 40% 60%;
+        }
+
+        .partA {
+          background: url(../../Imgs/event-01.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          @include center;
+
+          .blackBox {
+            background: #21201e;
+            height: 120px;
+            width: 120px;
+            @include column;
+
+            h1 {
+              color: white;
+              font-size: 3rem;
+              height: 60px;
+              font-family: $font2;
+              margin: 0;
+              padding: 0;
+            }
+
+            h2 {
+              color: white;
+              margin: 0;
+              padding: 0;
+              font-size: 2rem;
+              font-family: $font3;
+              font-weight: 500;
+            }
+          }
+        }
+
+        .partB {
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: left;
+          align-items: left;
+          padding: 25px;
+
+          h1 {
+            color: black;
+            font-size: 1.8rem;
+            height: 60px;
+            font-family: $font3;
+            margin: 0;
+            padding: 0;
+            margin: 10px 0;
+            letter-spacing: 1px;
+          }
+
+          h2 {
+            color: rgb(195, 195, 195);
+            margin: 0;
+            padding: 0;
+            font-size: 1.3rem;
+            font-family: $font3;
+            font-weight: 500;
+            margin: 10px 0;
+            letter-spacing: 1px;
+          }
+          h3 {
+            color: black;
+            margin: 0;
+            padding: 0;
+            font-size: 1.5rem;
+            font-family: $font3;
+            font-weight: 700;
+            margin: 10px 0;
+            letter-spacing: 4px;
+          }
+        }
+        .partC {
+          background: url(../../Imgs/event-02.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+
+          @include center;
+
+          .blackBox {
+            background: #21201e;
+            height: 120px;
+            width: 120px;
+            @include column;
+            margin: 0;
+            padding: 0;
+
+            h1 {
+              color: white;
+              font-size: 3rem;
+              height: 60px;
+              font-family: $font2;
+              margin: 0;
+              padding: 0;
+            }
+
+            h2 {
+              color: white;
+              margin: 0;
+              padding: 0;
+              font-size: 2rem;
+              font-family: $font3;
+              font-weight: 500;
+            }
+          }
+        }
+
+        .partD {
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: left;
+          align-items: left;
+          padding: 25px;
+
+          h1 {
+            color: black;
+            font-size: 1.8rem;
+            height: 60px;
+            font-family: $font3;
+            margin: 0;
+            padding: 0;
+            margin: 10px 0;
+            letter-spacing: 1px;
+          }
+
+          h2 {
+            color: rgb(195, 195, 195);
+            margin: 0;
+            padding: 0;
+            font-size: 1.3rem;
+            font-family: $font3;
+            font-weight: 500;
+            margin: 10px 0;
+            letter-spacing: 1px;
+          }
+          h3 {
+            color: black;
+            margin: 0;
+            padding: 0;
+            font-size: 1.5rem;
+            font-family: $font3;
+            font-weight: 700;
+            margin: 10px 0;
+            letter-spacing: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .droite {
+    grid-area: droite;
+    .container {
+      @include column;
+      height: 100%;
+      width: 100%;
+      .boxPartDroite {
+        background: no-repeat url(../../Imgs/event-03.jpg);
+        background-position: center;
+        background-size: cover;
+        height: calc(100% - 30px);
+        width: calc(100% - 30px);
+        @include column;
+        .boxText {
+          background: white;
+          height: calc(100% - 80px);
+          width: calc(100% - 80px);
+          @include column;
+          justify-content: space-between;
+
+          h1 {
+            color: black;
+            font-size: 1.8rem;
+            height: 60px;
+            font-family: $font3;
+            margin: 0;
+            padding: 0;
+            margin: 10px 0;
+            letter-spacing: 1px;
+            padding: 0 50px;
+            text-align: center;
+          }
+
+          h2 {
+            color: rgb(195, 195, 195);
+            margin: 0;
+            padding: 0;
+            font-size: 1.3rem;
+            font-family: $font3;
+            font-weight: 500;
+            margin: 10px 0;
+            letter-spacing: 1px;
+          }
+          h3 {
+            color: black;
+            margin: 0;
+            padding: 0;
+            font-size: 1.5rem;
+            font-family: $font3;
+            font-weight: 700;
+            margin: 10px 0;
+            letter-spacing: 4px;
+            padding-bottom: 50px;
+          }
+
+          .blackBox {
+            background: #21201e;
+            height: 120px;
+            width: 120px;
+            @include column;
+            margin: 0;
+            padding: 0;
+
+            h1 {
+              color: white;
+              font-size: 3rem;
+              height: 60px;
+              font-family: $font2;
+              margin: 0;
+              padding: 0;
+            }
+
+            h2 {
+              color: white;
+              margin: 0;
+              padding: 0;
+              font-size: 2rem;
+              font-family: $font3;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}

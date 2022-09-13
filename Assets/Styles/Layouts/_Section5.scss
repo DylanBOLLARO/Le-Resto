@@ -1,0 +1,141 @@
+.Section5 {
+  height: 100vh;
+  background: #21201e;
+  display: grid;
+  grid-template-rows: 33% 33% 34%;
+
+  .bg {
+    position: relative;
+    .whiteBox {
+      position: absolute;
+      height: 400px;
+      width: 60%;
+      background: white;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+      padding: 50px;
+      @include column;
+
+      .image {
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        background: no-repeat url(../../Imgs/avatar-02.jpg) center/cover;
+        z-index: 6;
+        top: 0;
+        transform: translateY(-50%);
+        border-radius: 150px;
+      }
+      p {
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: $font3;
+        padding-bottom: 30px;
+
+        span {
+          font-size: 2rem;
+          font-family: $font2;
+        }
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-family: $font3;
+        font-weight: 100;
+        padding-bottom: 30px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-family: $font3;
+        color: rgb(145, 109, 43);
+        font-weight: lighter;
+      }
+    }
+  }
+
+  .map {
+    background: url(../../Imgs/gmap.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .box {
+      position: absolute;
+      height: 500px;
+      width: 500px;
+    }
+  }
+
+  .footer {
+    background: url(../../Imgs/bg-footer.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .gauche {
+      padding: 50px 50px 50px 350px;
+      h1 {
+        color: rgb(163, 126, 58);
+        padding: 20px 0;
+        font-family: $font1;
+        font-weight: lighter;
+        font-size: 3rem;
+      }
+      h2 {
+        color: rgb(215, 215, 215);
+        padding: 20px 0;
+        font-family: $font3;
+        font-size: 1.2rem;
+        font-weight: lighter;
+        line-height: 2;
+      }
+    }
+
+    .droite {
+      padding: 50px;
+
+      .up {
+        height: 50%;
+
+        h1 {
+          color: white;
+          font-size: 1.2rem;
+          font-family: $font2;
+          font-weight: 500;
+          margin-bottom: 30px;
+        }
+        input {
+          background: transparent;
+          height: 40px;
+          width: 240px;
+          border: 1px solid rgba(255, 166, 0, 0.255);
+          &::placeholder {
+            padding-left: 5%;
+          }
+        }
+      }
+      .down {
+        height: 50%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        h1 {
+          color: white;
+          font-size: 1.2rem;
+          font-family: $font2;
+          font-weight: 500;
+        }
+
+        img {
+          height: 20px;
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+}
